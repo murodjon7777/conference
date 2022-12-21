@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="blog">
+    {% for post in object_list %}
+        <div class="post-entry"> 
+            
+                 <h1><a href="">{{post.title}}</a></h1>
+            <img src="{{post.img}}" alt="">
+            <p>{{post.text | slice:'100'}}</p> 
+            
+         <a href="/0a4ca680ac0018174066aa57c83629a7.3.jpg"  download="/amaliy3.docx">{{post.file}}
+            <img src="/0a4ca680ac0018174066aa57c83629a7.3.jpg" alt="">
+         </a>
+          
+        </div>
+
+    {% endfor %}  
+ </div>
+
+{% endblock content %}
